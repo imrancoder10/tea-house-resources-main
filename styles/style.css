@@ -156,6 +156,8 @@
 .card-container {
     display: flex;
     gap: 25px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card {
@@ -186,6 +188,67 @@
 
 /* feature card secton ends here............. */
 
+/* great tea section starts here............... */
+.great-tea-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.great-tea-img,
+.great-tea-content {
+    width: 50%;
+}
+
+.great-tea-img-container {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: 130px 130px; */
+    /* justify-items: center;
+    align-items: center; */
+    grid-gap: 30px;
+
+}
+
+.card1 {
+    grid-row: 1 / span 1;
+    background-color: #FFEEE9;
+    border-radius: 10px;
+}
+
+.card2 {
+    grid-row: 1 / span 2;
+    background-color: rgba(230, 166, 35, 0.10);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 45px;
+}
+
+.card3 {
+    grid-row: 2 / span 2;
+    border-color: rgba(87, 118, 57, 0.10);
+    text-align: center;
+    background-color: rgba(87, 118, 57, 0.10);
+    border-radius: 10px;
+    padding: 40px 45px;
+
+}
+
+.card4 {
+    grid-row: 3 / -1;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgba(217, 217, 217, 0), rgba(217, 217, 217, 1.00));
+
+}
+
+.card2>img,
+.card3>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* great tea section ends here............... */
 
 
 @media screen and (max-width:576px) {
@@ -245,5 +308,22 @@
 
     /* feature card secton ends here............. */
 
+
+    /* great tea section starts here............... */
+    .great-tea-container {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .great-tea-img,
+    .great-tea-content {
+        width: 90%;
+    }
+
+    .great-tea-img-container {
+        grid-template-columns: 180px 180px;
+    }
+    /* great tea section ends here............... */
 
 }
