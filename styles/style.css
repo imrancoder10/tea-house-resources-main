@@ -259,6 +259,9 @@
     text-align: center;
   
 }
+.news-card{
+    border-radius: 10px;
+}
 .news-card-container{
     display: flex;
     gap: 25px;
