@@ -11,31 +11,48 @@
 }
 
 /* common CSS strats here........... */
-.dark1 {color:#1C1C1C;}
-.dark2 {color: #494949;}
-.dark3 {color: #777777;}
-.dark7 {color: #F4F4F4;}
-.title{
+.dark1 {
+    color: #1C1C1C;
+}
+
+.dark2 {
+    color: #494949;
+}
+
+.dark3 {
+    color: #777777;
+}
+
+.dark7 {
+    color: #F4F4F4;
+}
+
+.title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    color: #1C1C1C;;
+    color: #1C1C1C;
+    ;
 }
-.sub-title{
+
+.sub-title {
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 20px;
-    color: #1C1C1C;;
+    color: #1C1C1C;
+    ;
 }
-.describtion{
+
+.describtion {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
     color: #777777;
 }
-.page-setup{
+
+.page-setup {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 
@@ -44,21 +61,24 @@
 
 
 /* navbar section starts here............... */
-.navbar-container{
+.navbar-container {
     display: flex;
     gap: 15px;
 
 }
-.navbar-title{
+
+.navbar-title {
     font-size: 5rem;
     font-weight: 800;
 }
-.navbar-describtion{
+
+.navbar-describtion {
     font-size: 1.25rem;
     font-weight: 500;
     margin: 30px 0;
 }
-.btn-primary{
+
+.btn-primary {
     padding: 18px;
     background-color: rgba(255, 0, 0, 1.00);
     font-size: 1.25rem;
@@ -66,26 +86,32 @@
     color: #FFFFFF;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
-.navbar-content{
+
+.navbar-content {
     width: 50%;
     /* border: 2px solid red; */
 }
-.navbar-img-container{
+
+.navbar-img-container {
     width: 50%;
     /* border: 2px solid rgb(78, 8, 207); */
     position: relative;
 
 }
-.navbar-img-container>img{
+
+.navbar-img-container>img {
     width: 100%;
     height: 100%;
-    
+
 }
-.Rating-container{
+
+.Rating-container {
     display: flex;
-    gap: 8px;
-    padding: 20px 10px;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding: 10px 10px;
     align-items: center;
     background-color: #FFF;
     width: 250px;
@@ -96,17 +122,128 @@
     box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.06);
 
 }
-.fa-solid{
+
+.fa-solid {
     color: #FFDC64;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 20px;
 }
-.five-thousand{
+
+.five-thousand {
     font-size: 1.8rem;
     font-weight: 800;
 }
-.rating{
+
+.rating {
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* navbar section ends here............... */
+
+/* featuere secton starts here............. */
+.content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* feature secton ends here............. */
+
+
+/* feature card secton starts here............. */
+.card-container {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(244, 244, 244), rgba(244, 244, 244, 0) 100%);
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    padding: 30px 60px 0 60px;
+
+}
+
+.card-content {
+    padding: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 30px 0 10px 0;
+}
+
+/* feature card secton ends here............. */
+
+
+
+@media screen and (max-width:576px) {
+
+    /* navbar responsive starts here.............. */
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .navbar-title {
+        font-size: 3rem;
+    }
+
+    .navbar-content {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .navbar-img-container {
+        width: 100%;
+    }
+
+    .Rating-container {
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+    }
+
+    /* navbar responsive ends here.............. */
+
+
+    /* featuere secton starts here............. */
+    .content {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    /* feature secton ends here............. */
+
+
+    /* feature card secton starts here............. */
+    .card-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card-img {
+        width: 80%;
+        height: 80%;
+    }
+
+
+    /* feature card secton ends here............. */
+
+
+}
