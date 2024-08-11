@@ -253,40 +253,114 @@
 /* great tea section ends here............... */
 
 /* news section starts here................ */
-.news-content{
+.news-content {
     width: 65%;
     margin: 0 auto 50px auto;
     text-align: center;
-  
+
 }
-.news-card{
+
+.news-card {
     border-radius: 10px;
 }
-.news-card-container{
+
+.news-card-container {
     display: flex;
     gap: 25px;
 }
-.there-part{
+
+.there-part {
     width: 33.33%;
 }
-.news-card{
+
+.news-card {
     padding: 20px;
     box-shadow: 0px 0px 4px 0px #D2D2D2;
 }
 
-.img-wrapper>img{
-  width: 100%;
-  height: 100%;
+.img-wrapper>img {
+    width: 100%;
+    height: 100%;
 }
-.date{
+
+.date {
     font-size: 1rem;
     font-weight: 500;
 }
-.learn-more{
+
+.learn-more {
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* news section ends here................ */
+
+
+/* footer section starts here................. */
+footer {
+    height: 700px;
+    background: linear-gradient(270.00deg, rgba(255, 0, 0, 0.1), rgba(255, 137, 56, 0.1) 100%);
+    ;
+}
+
+.footer-top-container {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ready {
+    margin-right: 40px;
+}
+
+.footer-middle-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links,
+.our-service,
+.help,
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quick-links,
+.our-service,
+.help,
+.subscribe,
+p>a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.rights {
+    text-align: center;
+}
+
+.subscribe>input {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #494949;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    outline: none;
+
+
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+.fa-brands {
+    margin-right: 25px;
+}
+
+/* footer section ends here................. */
 
 @media screen and (max-width:576px) {
 
@@ -361,20 +435,52 @@
     .great-tea-img-container {
         grid-template-columns: 180px 180px;
     }
+
     /* great tea section ends here............... */
 
-    
-/* news section starts here................ */
-.news-content{
-    width: 100%;
-}
-.news-card-container{
-    flex-direction: column;
-}
-.there-part{
-    width: 100%;
-}
 
-/* news section ends here................ */
+    /* news section starts here................ */
+    .news-content {
+        width: 100%;
+    }
+
+    .news-card-container {
+        flex-direction: column;
+    }
+
+    .there-part {
+        width: 100%;
+    }
+
+    /* news section ends here................ */
+
+    /* footer section starts here................. */
+    footer {
+        height: auto;
+    }
+
+    .footer-top-container {
+        padding: 50px 20px;
+    }
+
+    .footer-top-container>img {
+        width: 50px;
+    }
+
+    .ready {
+        margin-right: 10px;
+    }
+
+    .footer-middle-container {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .rights{
+        padding-bottom: 50px;
+    }
+
+    /* footer section ends here................. */
 
 }
